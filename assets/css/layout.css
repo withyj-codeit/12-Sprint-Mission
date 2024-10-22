@@ -123,3 +123,19 @@ body {
 #footer .sns-list .sns-item img {
   width: 100%;
 }
+
+@media screen and (max-width: 1200px) {
+  #header {
+    padding: 0;
+  }
+
+  #footer {
+    padding-top: 4rem;
+  }
+
+  #footer .inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

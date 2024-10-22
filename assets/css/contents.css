@@ -48,3 +48,177 @@
 .btn-sm-48 {
   height: 4.8rem;
 }
+
+/* page */
+.banner {
+  position: relative;
+  background: #cfe5ff;
+  height: 54rem;
+  padding: 0 17.6rem;
+}
+
+.banner .inner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.banner .banner-content {
+  margin-bottom: 10rem;
+  position: relative;
+  z-index: 1;
+}
+
+.banner .banner-title {
+  margin-bottom: 3.2rem;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-seondary-700);
+}
+
+.banner .banner-img {
+  position: absolute;
+  right: 2.4rem;
+  bottom: 0;
+  width: min(55vw, 74.6rem);
+}
+
+.section {
+  background: #fff;
+  padding: 13.8rem 0;
+}
+
+.section .inner {
+  max-width: 103.6rem;
+}
+
+.feature-card {
+  height: 44.4rem;
+  display: flex;
+  gap: 6.4rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fcfcfc;
+}
+
+.feature-card .feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-card .feature-content {
+  flex: 0 0 34.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 4rem;
+  word-break: keep-all;
+}
+
+.feature-card .feature-keyword {
+  margin-bottom: 1.2rem;
+  color: var(--color-primary-100);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.feature-card .feature-title {
+  margin-bottom: 2.4rem;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-seondary-700);
+}
+
+.feature-card .feature-description {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--color-seondary-700);
+}
+
+.section-02 .feature-card {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.section-02 .feature-content {
+  padding-left: 4rem;
+  padding-right: 0;
+}
+
+.footer-banner {
+  margin-top: 13.8rem;
+}
+
+.footer-banner .banner-content {
+  margin-bottom: 17.2rem;
+}
+
+.footer-banner .banner-title {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .banner .inner {
+    justify-content: flex-start;
+    padding-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section {
+    padding: 4rem 0 8rem;
+  }
+  .banner {
+    height: auto;
+    padding: 0;
+  }
+
+  .banner .inner {
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner .banner-img {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin: 0;
+    width: 100%;
+  }
+
+  .feature-card {
+    display: block;
+    height: auto;
+    background: none;
+    border-radius: 0;
+  }
+
+  .feature-card .feature-image {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 4rem;
+  }
+
+  .feature-card .feature-image img {
+    object-fit: unset;
+    height: auto;
+  }
+
+  .feature-card .feature-title {
+    margin-bottom: 1.8rem;
+    font-size: 3rem;
+  }
+
+  .feature-card .feature-description {
+    font-size: 2rem;
+  }
+
+  .footer-banner {
+    margin-top: 0;
+  }
+}
