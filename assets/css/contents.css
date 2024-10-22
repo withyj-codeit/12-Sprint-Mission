@@ -78,7 +78,7 @@
 .banner {
   position: relative;
   height: 54rem;
-  padding: 0 17.6rem;
+  padding: 0 calc(20rem - var(--gutter));
   background: #cfe5ff;
 }
 
@@ -117,7 +117,7 @@
 }
 
 .section .inner {
-  max-width: 103.6rem;
+  max-width: calc(98.8rem + var(--gutter) * 2);
 }
 
 .feature-card {

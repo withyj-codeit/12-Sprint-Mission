@@ -16,9 +16,9 @@ body {
 }
 
 .inner {
-  max-width: 115.8rem;
+  max-width: calc(112rem + var(--gutter) * 2);
   margin: 0 auto;
-  padding: 0 2.4rem;
+  padding: 0 var(--gutter);
 }
 
 /* layout - header */
@@ -29,7 +29,7 @@ body {
   right: 0;
   z-index: 100;
   height: 7rem;
-  padding: 0 17.6rem;
+  padding: 0 calc(20rem - var(--gutter));
   border-bottom: 1px solid var(--color-grey);
   background: #fff;
 }
@@ -81,7 +81,7 @@ body {
 
 /* layout - footer */
 #footer {
-  padding: 3.2rem 17.6rem 10.8rem;
+  padding: 3.2rem calc(20rem - var(--gutter)) 10.8rem;
   background: var(--color-seondary-900);
   color: var(--color-white);
 }
