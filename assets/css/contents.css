@@ -165,12 +165,12 @@
   color: var(--color-seondary-700);
 }
 
-.section-02 .feature-card {
+.reverse .feature-card {
   flex-direction: row-reverse;
   text-align: right;
 }
 
-.section-02 .feature-content {
+.reverse .feature-content {
   padding-left: 4rem;
   padding-right: 0;
 }
