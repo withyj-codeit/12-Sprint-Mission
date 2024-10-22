@@ -2,12 +2,12 @@
 
 /* temporary page ui */
 .temp-wrapper {
-  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   gap: 6rem;
+  height: 100vh;
 }
 
 .temp-wrapper .page-content {
@@ -28,8 +28,8 @@
 /* common - button */
 [class^="btn-"] {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background: var(--color-primary-100);
   color: var(--color-white);
 }
@@ -77,23 +77,23 @@
 /* page */
 .banner {
   position: relative;
-  background: #cfe5ff;
   height: 54rem;
   padding: 0 17.6rem;
+  background: #cfe5ff;
 }
 
 .banner .inner {
   position: relative;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  height: 100%;
 }
 
 .banner .banner-content {
-  margin-bottom: 10rem;
   position: relative;
   z-index: 1;
+  margin-bottom: 10rem;
 }
 
 .banner .banner-title {
@@ -112,8 +112,8 @@
 }
 
 .section {
-  background: #fff;
   padding: 13.8rem 0;
+  background: #fff;
 }
 
 .section .inner {
@@ -121,11 +121,11 @@
 }
 
 .feature-card {
-  height: 44.4rem;
+  overflow: hidden;
   display: flex;
   gap: 6.4rem;
+  height: 44.4rem;
   border-radius: 12px;
-  overflow: hidden;
   background: #fcfcfc;
 }
 
@@ -136,10 +136,10 @@
 }
 
 .feature-card .feature-content {
-  flex: 0 0 34.5rem;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  flex: 0 0 34.5rem;
   padding-right: 4rem;
   word-break: keep-all;
 }
@@ -212,26 +212,26 @@
     position: relative;
     right: auto;
     bottom: auto;
-    margin: 0;
     width: 100%;
+    margin: 0;
   }
 
   .feature-card {
     display: block;
     height: auto;
-    background: none;
     border-radius: 0;
+    background: none;
   }
 
   .feature-card .feature-image {
-    border-radius: 12px;
     overflow: hidden;
     margin-bottom: 4rem;
+    border-radius: 12px;
   }
 
   .feature-card .feature-image img {
-    object-fit: unset;
     height: auto;
+    object-fit: unset;
   }
 
   .feature-card .feature-title {
