@@ -1,5 +1,30 @@
 @charset "utf-8";
 
+/* temporary page ui */
+.temp-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.temp-wrapper .page-content {
+  text-align: center;
+}
+
+.temp-wrapper .page-title {
+  margin-bottom: 0.3em;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--color-seondary-700);
+}
+
+.temp-wrapper .page-description {
+  color: var(--color-seondary-400);
+}
+
 /* common - button */
 [class^="btn-"] {
   display: flex;
