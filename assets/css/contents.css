@@ -111,12 +111,12 @@
   width: min(55vw, 74.6rem);
 }
 
-.section {
+.feature {
   padding: 13.8rem 0;
   background: #fff;
 }
 
-.section .inner {
+.feature .inner {
   max-width: calc(98.8rem + var(--gutter) * 2);
 }
 
@@ -195,7 +195,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .section {
+  .feature {
     padding: 4rem 0 8rem;
   }
   .banner {
