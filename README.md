@@ -1,4 +1,4 @@
-### git 커맨드
+# git 커맨드
 
 - git init : 현재 디렉토리를 Git이 관리하는 프로젝트 디렉토리(=working directory)로 설정하고 그 안에 레포지토리(.git 디렉토리) 생성
 - git config user.name 'codeit' : 현재 사용자의 아이디를 'codeit'으로 설정(커밋할 때 필요한 정보)
@@ -10,3 +10,7 @@
 - git status : Git이 현재 인식하고 있는 프로젝트 관련 내용들 출력(문제 상황이 발생했을 때 현재 상태를 파악하기 위해 활용하면 좋음)
 - git commit -m "커밋 메시지" : 현재 staging area에 있는 것들 커밋으로 남기기
 - git help [커맨드 이름] : 사용법이 궁금한 Git 커맨드의 공식 메뉴얼 내용 출력
+- git push -u origin master : 로컬 레포지토리의 내용을 처음으로 리모트 레포지토리에 올릴 때 사용합니다.
+- git push : 로컬 레포지토리의 내용을 리모트 레포지토리에 보내기
+- git pull : 리모트 레포지토리의 내용을 로컬 레포지토리로 가져오기
+- git clone [프로젝트의 GitHub 상 주소] : GitHub에 있는 프로젝트를 내 컴퓨터로 가져오기
