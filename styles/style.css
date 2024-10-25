@@ -13,7 +13,9 @@
     justify-content: space-around;
     align-items: center;
 }
-
+.top_logo > img{
+    cursor:pointer;
+}
 .log_btn {
     border-radius: 8px;
     font-size: 16px;
@@ -26,15 +28,18 @@
     color: white;
     cursor:pointer;
 }
-.mid_search {
+.mid {
     background-color: #CFE5FF;
     width: 100%;
     height: 540px;
+    position: relative;
 }
 .mid_total{
     width: 1110px;
-    height: 540px;
-    position: relative;
+    height: 340px;
+    position: absolute;
+    top: 200px;
+    left: 405px;
 }
 
 .mid_btn {
@@ -66,7 +71,7 @@
     font-weight: 700;
     line-height: 56px;
     position: absolute;
-    top: 240px;
+    top: 40px;
     left:0;
 }
 .content{
@@ -126,19 +131,20 @@
     line-height: 32px;
 }
 
-.final{
+.fin{
     width: 100%;
     height:540px;
     background-color: #CFE5FF;
-    position:relative
+    position: relative;
 }
 
-.fin{
+.fin_total{
     width: 1110px;
     height:397px;
-    position: absolute;
+    top:143px;
     left:405px;
-    bottom:0;
+    position: absolute;
+
 }
 
 .fin_sen{
@@ -179,25 +185,20 @@
 .foot_name{
     color:#9CA3AF;
     position: absolute;
-    left:0;
+
 }
 
 .foot_pri{
     color:white;
-    position: absolute;
-    left:478.5px;
     cursor:pointer;
 }
 
 .foot_faq{
     color:white;
-    position: absolute;
-    left:600px;
     cursor:pointer;
 }
 
 .foot_icons{
-    position: absolute;
-    right:0;
+  
     cursor:pointer;
 }
