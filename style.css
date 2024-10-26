@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  font-family: "pretendard";
+  color: #333;
+}
+
+body {
+  width: 100%;
+  min-width: 1080px;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+/* 헤더 영역 */
+header {
+  width: 1080px;
+  height: 70px;
+}
+
+.logo {
+  float: left;
+  width: 200px;
+  height: 51px;
+}
+
+.logo img {
+  float: left;
+  width: 153px;
+  height: 51px;
+  margin-top: 10px;
+}
+
+.log-in {
+  float: right;
+  width: 128px;
+  height: 48px;
+  position: center;
+  background-color: #3692ff;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.log-in>a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* 메인 영역 */
+main {
+  width: 100%;
+  height: 540px;
+  background-color: #cfe5ff;
+}
+
+.main-cut {
+  width: 1110px;
+  height: 540px;
+  position: relative;
+}
+
+.main-cut h1 {
+  float: left;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  margin-top: 240px;
+}
+
+.shortcut {
+  position: absolute;
+  float: left;
+  width: 357px;
+  height: 56px;
+  background-color: #3692ff;
+  border-radius: 40px;
+  bottom: 0;
+  margin-top: 32px;
+  margin-bottom: 100px;
+}
+
+.shortcut>a {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 56px;
+  text-align: center;
+  color: #fff;
+}
+
+.main-cut img {
+  float: right;
+  width: 746px;
+  height: 340px;
+  margin-top: 200px;
+}
+
+/* 콘텐츠 영역 */
+.contents {
+  width: 100%
+}
+
+/* hot-item */
+.hot-item {
+  width: 988px;
+  height: 444px;
+  padding: 138px 0 138px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.hot-item img {
+  width: 579px;
+  height: 444px;
+}
+
+.htext {
+  margin-top: 103px;
+}
+
+.hot-item span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #3692FF;
+  margin-bottom: 12px;
+}
+
+.hot-item h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  margin-bottom: 24px;
+}
+
+.hot-item p {
+  font-size: 24px;
+  font-weight: 500px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+/* search */
+.search {
+  width: 988px;
+  height: 444px;
+  padding: 138px 0 138px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.stext {
+  margin-top: 103px;
+  text-align: right;
+}
+
+.search span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #3692FF;
+  margin-bottom: 12px;
+}
+
+.search h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  margin-bottom: 24px;
+}
+
+.search p {
+  font-size: 24px;
+  font-weight: 500px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.search img {
+  width: 579px;
+  height: 444px;
+}
+
+/* register */
+.register {
+  width: 988px;
+  height: 444px;
+  padding: 138px 0 138px 0;
+  margin-bottom: 138px;
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.register img {
+  width: 579px;
+  height: 444px;
+}
+
+.rtext {
+  margin-top: 103px;
+}
+
+.rtext span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #3692FF;
+  margin-bottom: 12px;
+}
+
+.rtext h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  margin-bottom: 24px;
+}
+
+.rtext p {
+  font-size: 24px;
+  font-weight: 500px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+/* 하단부 영역 */
+.bottom {
+  width: 100%;
+  height: 540px;
+  background-color: #CFE5FF;
+  display: flex;
+}
+
+.btpanda {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btpanda h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  margin-top: 255.5px;
+}
+
+.btpanda img {
+  width: 746px;
+  height: 397px;
+  margin-top: 143px;
+}
+
+/* 푸터 영역 */
+footer {
+  width: 100%;
+  height: 160px;
+  background-color: #111827;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 19px;
+  padding-top: 32px;
+}
+
+.container p {
+  color: #9CA3AF;
+}
+
+.link {
+  display: flex;
+  gap: 30px;
+}
+
+.link p>a {
+  color: #E5E7EB;
+}
+
+.sns {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+}
+
+.sns img {
+  width: 20px;
+}
