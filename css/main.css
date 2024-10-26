@@ -18,7 +18,7 @@ p.title{font-weight: 700; font-size: 40px; line-height: 1.4;}
 .infoBox .imgBox{flex-shrink: 0; width: 580px;}
 .infoBox .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 .infoBox .infoText{display: block; margin-bottom: 12px; color: #3692FF; font-size: 18px; line-height: 1.44; font-weight: 700;}
-.infoBox .textBox{width: 100%; display: flex; flex-direction: column; justify-content: center; padding: 0 48px 0 64px; background-color: #FCFCFC;}
+.infoBox .textBox{width: 100%; display: flex; flex-direction: column; justify-content: center; padding: 0 21px 0 52px; background-color: #FCFCFC;}
 .infoBox .textBox p.title{margin-bottom: 24px;}
 .infoBox .textBox p.text{font-size: 24px; line-height: 1.33; font-size: 24px; font-weight: 500;}
 
