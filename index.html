@@ -4,111 +4,126 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/index.css">
   <title>판다마켓</title>
 </head>
 <body>
-  <div class="header">
-    <div class="logo">
-      <img src="images/logo.png">
-      <h1 class="logoTitle">
-        <a href="/">판다마켓</a>
-      </h1>
-    </div>
-    <button type="button" 
-            onclick="location.href='/login'">
-            로그인
-    </button>
-  </div>
-  <div class="section_1">
-    <div class="sec1_frame">
-      <div class="content">
-        <div id="section_1_H1">
-          <h1>일상의 모든 물건을 거래해 보세요</h1>
+<!---------- header ---------->
+  <header>
+    <nav class="header-bar">
+      <!-- 로고 -->
+      <div class="logo">
+        <img src="images/logo.png" alt="로고이미지">
+        <h1 class="logoTitle">
+          <a href="/">판다마켓</a>
+        </h1>
+      </div>
+      <!-- 로그인 -->
+      <button type="button" 
+              onclick="location.href='/login'">
+              로그인
+      </button>
+    </nav>
+  </header>
+<!---------- main ---------->
+  <main>
+    <!-- 구경하러 가기 -->
+    <nav class="section_1">
+      <div class="sec1_frame">
+        <div class="sec1_sentence_flex">
+          <div class="sec1_sentence">
+            <h1>일상의 모든 물건을 거래해 보세요</h1>
+          </div>
+          <button type="button" 
+                  onclick="location.href='/items'">
+                  구경하러 가기
+          </button>
         </div>
-        <button type="button" 
-                onclick="location.href='/items'">
-                구경하러 가기
-        </button>
-      </div>
-      <div class="section_1_image">
-        <img src="images/section_1.png">
-      </div>
-      </div>
-  </div>
-  <div class="section_2">
-    <div class="section_2_1">
-      <div class="sec2_1frame">
-        <div class="imgSize">
-          <img src="images/Img_home_01.png">
+        <div class="sec1_img">
+          <img src="images/section_1.png" alt="구경하러가기이미지">
         </div>
-        <div class="hotItem">
-          <h1>Hot item</h1>
-          <div class="hotItem2">
-            <h2>인기 상품을<br> 확인해 보세요</h2>
-            <h3>가장 HOT한 중고거래 물품을<br>
-                판다 마켓에서확인해 보세요</h3>
+      </div>
+    </nav>
+    <!-- 인기 상품 -->
+    <nav class="section_2">
+      <div class="sec2_1">
+        <div class="sec2_1frame">
+          <div class="imgSize">
+            <img src="images/Img_home_01.png" alt="인기상품이미지">
+          </div>
+          <div class="sec2_hotItem_flex">
+            <h1>Hot item</h1>
+            <div class="hotItem">
+              <h2>인기 상품을<br> 확인해 보세요</h2>
+              <h3>가장 HOT한 중고거래 물품을<br>
+                  판다 마켓에서확인해 보세요</h3>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="section_2_2">
-      <div class="sec2_2frame">
-        <div class="search">
-          <h1>Search</h1>
-          <div class="search2">
-            <h2>구매를 원하는<br> 상품을 검색하세요</h2>
-            <h3>구매하고 싶은 물품은 검색해서
-                <br> 쉽게 찾아보세요</h3>
+      <!-- 상품 검색 -->
+      <div class="sec2_2">
+        <div class="sec2_2frame">
+          <div class="sec2_search_flex">
+            <h1>Search</h1>
+            <div class="search">
+              <h2>구매를 원하는<br> 상품을 검색하세요</h2>
+              <h3>구매하고 싶은 물품은 검색해서
+                  <br> 쉽게 찾아보세요</h3>
+            </div>
           </div>
-        </div>
-        <div class="imgSize">
-          <img src="images/Img_home_02.png">
-        </div>
-      </div>
-    </div>
-    <div class="section_2_3">
-      <div class="sec2_3frame">
-        <div class="imgSize">
-          <img src="images/Img_home_03.png">
-        </div>
-        <div class="register">
-          <h1>Register</h1>
-          <div class="register2">
-            <h2>판매를 원하는<br> 상품을 등록하세요</h2>
-            <h3>어떤 물건이든 판매하고 싶은 상품을
-                <br>쉽게 등록하세요</h3>
+          <div class="imgSize">
+            <img src="images/Img_home_02.png" alt="상품검색이미지">
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="section_3">
-    <div class="sec3_frame">
-      <div class="section_3_H1">
-        <h1>믿을 수 있는<br>판다마켓 중고 거래</h1>
+      <!-- 상품 등록 -->
+      <div class="sec2_3">
+        <div class="sec2_3frame">
+          <div class="imgSize">
+            <img src="images/Img_home_03.png" alt="상품등록이미지">
+          </div>
+          <div class="sec2_register_flex">
+            <h1>Register</h1>
+            <div class="register">
+              <h2>판매를 원하는<br> 상품을 등록하세요</h2>
+              <h3>어떤 물건이든 판매하고 싶은 상품을
+                  <br>쉽게 등록하세요</h3>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="section_3_image">
-        <img src="images/panda2.png">
+    </nav>
+    <!-- 메인 하단 -->
+    <nav class="section_3">
+      <div class="sec3_frame">
+        <div class="sec3_sentence">
+          <h1>믿을 수 있는<br>판다마켓 중고 거래</h1>
+        </div>
+        <div class="sec3_img">
+          <img src="images/panda2.png" alt="메인하단이미지">
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="footer-bar">
+    </nav>
+  </main>
+<!---------- footer ---------->
+  <footer class="footer">
+    <nav class="footer-bar">
       <div class="copyRight">
-        <div><p>@codeit - 2024</p></div>
+        <p>@codeit - 2024</p>
       </div>
       <div class="privacyNfaq">
         <a href="/privacy">Privacy Policy</a>
         <a href="/faq">FAQ</a>
       </div>
+      <!-- 소셜사이트 페이지 이동 -->
       <div class="socialNetwork">
         <div class="facebook"><a href="https://www.facebook.com/?locale=ko_KR" target="_blank"><img src="images/ic_facebook.png"></a></div>
         <div class="twitter"><a href="https://www.twitter.com" target="_blank"><img src="images/ic_twitter.png"></a></div>
         <div class="youtube"><a href="https://www.youtube.com/" target="_blank"><img src="images/ic_youtube.png"></a></div>
         <div class="instagram"><a href="https://www.instagram.com" target="_blank"><img src="images/ic_instagram.png"></a></div>
       </div>
-    </div>
-  </div>
+    </nav>
+  </footer>
 </body>
 </html>
