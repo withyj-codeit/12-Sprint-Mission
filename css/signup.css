@@ -17,14 +17,14 @@
   --gray50: #F9FAFB;
 }
 
-/* JOIN CSS FILE */
+/* SIGNUP CSS FILE */
 body {
   margin: 0;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 /* flex 지정 */
-.container nav, .logo, .joinForm, .otherLogin, .site {
+.container nav, .logo, .signupForm, .otherLogin, .site {
   display: flex;
 }
 
@@ -58,20 +58,20 @@ body {
 }
 
 /* 회원가입 폼 */
-.joinForm {
+.signupForm {
   width: 100%;
   flex-direction: column;
   gap: 24px;
 }
 
-.joinForm label {
+.signupForm label {
   color: var(--gray800);
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.joinForm input {
+.signupForm input {
   color: var(--gray800);
   font-weight: 400;
   border: 0;
@@ -83,12 +83,12 @@ body {
   height: 26px;
 }
 
-.joinForm input::placeholder {
+.signupForm input::placeholder {
   color: var(--gray400);
   opacity: 0.7;
 }
 
-.joinForm input:focus {
+.signupForm input:focus {
   outline: 1px solid var(--blue);
 }
 

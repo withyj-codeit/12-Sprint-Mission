@@ -162,13 +162,13 @@ body {
 
 /* 회원가입 페이지 이동 */
 
-.joinPage {
+.signupPage {
   text-align: center;
   font-size: 14px;
   font-weight: 500;
   color: var(--gray800);
 }
 
-.joinPage a {
+.signupPage a {
   color: var(--blue);
 }
