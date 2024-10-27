@@ -26,9 +26,9 @@
 
 ## 스크린샷
 
-![image](sprint_mission\deployed-img\index.html.jpg)
-![image](sprint_mission\deployed-img\login.html.jpg)
-![image](sprint_mission\deployed-img\join.html.jpg)
+![image](12-Sprint-Mission\deployed-img\index.html.jpg)
+![image](12-Sprint-Mission\deployed-img\login.html.jpg)
+![image](12-Sprint-Mission\deployed-img\signup.html.jpg)
 
 ## 멘토에게
 
