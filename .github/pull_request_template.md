@@ -19,12 +19,15 @@
 
 ## 주요 변경사항
 
+- login.html , join.html 작성
+- 배포 링크 : https://fe-12-kimkyungki.netlify.app
+
 ## 스크린샷
 
-![image](이미지url)
+![image](sprint_mission\deployed-img\index.html.jpg)
+![image](sprint_mission\deployed-img\login.html.jpg)
+![image](sprint_mission\deployed-img\join.html.jpg)
 
 ## 멘토에게
 
-- 반응형으로 미리 구조 잡아보려고 했는데 잘못되었거나 미흡한 점 
-  알려주시면 감사합니다.
 - 셀프 코드 리뷰를 통해 질문 이어가겠습니다.
