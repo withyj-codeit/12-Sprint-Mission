@@ -26,9 +26,9 @@
 
 ## 스크린샷
 
-![image](12-Sprint-Mission\deployed-img\index.html.jpg)
-![image](12-Sprint-Mission\deployed-img\login.html.jpg)
-![image](12-Sprint-Mission\deployed-img\signup.html.jpg)
+![image](https://github.com/kyungkiK/12-Sprint-Mission/blob/Basic-%EA%B9%80%EA%B2%BD%EA%B8%B0-sprint2/deployed-img/index.html.jpg)
+![image](https://github.com/kyungkiK/12-Sprint-Mission/blob/Basic-%EA%B9%80%EA%B2%BD%EA%B8%B0-sprint2/deployed-img/login.html.jpg)
+![image](https://github.com/kyungkiK/12-Sprint-Mission/blob/Basic-%EA%B9%80%EA%B2%BD%EA%B8%B0-sprint2/deployed-img/signup.html.jpg)
 
 ## 멘토에게
 
