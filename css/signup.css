@@ -1,0 +1,174 @@
+/* ROKAF Sans 폰트 */
+@font-face {
+  font-family: 'ROKAF Sans';
+  src: url(/sprint_mission/12-Sprint-Mission/fonts/ROKAF_SANS_MEDIUM.ttf) format('truetype');
+}
+
+:root {
+  --blue: #3692FF;
+  --gray900: #111827;
+  --gray800: #1F2937;
+  --gray700: #374151;
+  --gray600: #4B5563;
+  --gray500: #6B7280;
+  --gray400: #9CA3AF;
+  --gray200: #E5E7EB;
+  --gray100: #F3F4F6;
+  --gray50: #F9FAFB;
+}
+
+/* SIGNUP CSS FILE */
+body {
+  margin: 0;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* flex 지정 */
+.container nav, .logo, .signupForm, .otherLogin, .site {
+  display: flex;
+}
+
+.container {
+  padding: 231px 640px;
+}
+
+.container nav {
+  gap: 40px;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 상단 로고 */
+.logo {
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  gap: 22px;
+}
+
+.logoTitle a {
+  font-family: 'ROKAF Sans', sans-serif;
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 89px;
+  text-align: left;
+}
+
+/* 회원가입 폼 */
+.signupForm {
+  width: 100%;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.signupForm label {
+  color: var(--gray800);
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.signupForm input {
+  color: var(--gray800);
+  font-weight: 400;
+  border: 0;
+  background-color: var(--gray100);
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 15px 24px;
+  height: 26px;
+}
+
+.signupForm input::placeholder {
+  color: var(--gray400);
+  opacity: 0.7;
+}
+
+.signupForm input:focus {
+  outline: 1px solid var(--blue);
+}
+
+#submit {
+  height: 56px;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  border-radius: 40px;
+  padding: 16px 285px;
+  width: 100%;
+  border: 0;
+  background-color: var(--gray400);
+  color: var(--gray100);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  /*cursor: not-allowed;*/
+}
+
+/* 로그인 버튼 이벤트 리스너 부분 (스크립트 작성시 사용)
+#submit.active {
+  background-color: var(--blue);
+  cursor: pointer;
+}
+*/
+
+.emailInput, .passwordInput, .nicknameInput, .pwCheckInput {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 24px;
+}
+
+.passwordInput, .pwCheckInput {
+  position: relative;
+}
+
+.passwordInput i, .pwCheckInput i{
+  position: absolute;
+  margin: 58px 0 16px;
+  right: 24px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 간편로그인 */
+.otherLogin {
+  height: 74px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6f2ff;
+  border-radius: 8px;
+}
+
+.site_sentence {
+  color: var(--gray800);
+  padding: 24px 0 24px 23px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.site {
+  padding: 24px 23px 24px 0;
+  gap: 16px;
+}
+
+.site img {
+  width: 42px;
+}
+
+/* 로그인 페이지 이동 */
+
+.loginPage {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray800);
+}
+
+.loginPage a {
+  color: var(--blue);
+}

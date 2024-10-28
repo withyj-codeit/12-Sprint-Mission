@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>판다마켓</title>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <!-- 로고 -->
+      <div class="logo">
+        <img src="images/logo.png" alt="로고이미지">
+        <h1 class="logoTitle">
+          <a href="/">판다마켓</a>
+        </h1>
+      </div>
+      <!-- 회원가입 폼 -->
+      <div class="signupForm">
+        <form method="post">
+          <div class="emailInput">
+            <label for="email">이메일</label>
+            <input type="email" name="email" placeholder="이메일을 입력해주세요">
+          </div>
+          <div class="nicknameInput">
+            <label for="nickname">닉네임</label>
+            <input type="text" name="text" placeholder="닉네임을 입력해주세요">
+          </div>
+          <div class="passwordInput">
+            <label for="password">비밀번호</label>
+            <input type="password" name="password" placeholder="비밀번호를 입력해주세요">
+            <i class="fa-regular fa-eye-slash"></i>
+          </div>
+          <div class="pwCheckInput">
+            <label for="password">비밀번호 확인</label>
+            <input type="password" name="passwordCheck" placeholder="비밀번호를 다시 한 번 입력해주세요">
+            <i class="fa-regular fa-eye-slash"></i>
+          </div>
+          <input type="submit" name="joinButton" id="submit" value="회원가입">
+        </form>
+        <div class="otherLogin">
+          <div class="site_sentence">
+            <p>간편 로그인하기</p>
+          </div>
+          <div class="site">
+            <a href="https://www.google.com/" target="_blank"><img src="images/ic-google.png"></a>
+            <a href="https://www.kakaocorp.com/page/" target="_blank"><img src="images/ic-kakao.png"></a>
+          </div>
+        </div>
+        <!-- 로그인 페이지 이동 -->
+        <div class="loginPage">
+          <p>이미 회원이신가요? <a href="/login">로그인</a></p>
+        </div>
+      </div>
+    </nav>
+  </div>
+</body>
+</html>
