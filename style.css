@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+  html {
+    font-family: Pretendard, sans-serif;
+    word-break: keep-all;
+  }
+
+body {
+  background-color: #ffffff;
+}
+
+header {
+  width: 100%;
+  display: grid ;
+  grid-template-columns: minmax(200px, 1fr) 153px minmax(0, 3fr) 128px minmax(200px, 1fr);
+  grid-template-areas: 
+    ". p . l ."
+  ;
+  align-items: center; 
+  padding: 9px ; 
+}
+
+.panda-logo {
+  cursor: pointer;  
+  grid-area: p;
+}
+
+.login {  
+  cursor: pointer;  
+  grid-area: l;
+  width: 128px;
+  height: 48px;            
+  font-size: 16px;
+  font-weight: 600;           
+  background-color: #3692ff; 
+  color: white;             
+  border: none;             
+  border-radius: 8px;   
+  font-size: 16px;
+  padding: 12px 23px;
+}
+
+
+.banner-container {
+  position: relative;
+  background-color: #cfe5ff;
+  width: 100%;
+  height: 540px;
+}
+
+.banner-text {
+  font-size: 40px;
+  font-weight: 700;
+  width: 357px;
+  line-height: 1.4;
+  color: #374151;
+}
+
+.store-button {
+  cursor: pointer;  
+  font-size: 20px;
+  font-weight: 600;
+  width: 357px;
+  height: 56px;
+  border-radius: 40px;
+  background-color: #3692ff;
+  border: 0px;
+  color: #F9FAFB;
+}
+
+.banner {
+  position: absolute; 
+  left: 50%; 
+  bottom: 0; 
+  transform: translateX(-50%); 
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+}
+
+.banner-top-img {
+  width: 746px;
+  height: 340px;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 100%;
+  height: 720px;
+}
+
+.main-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  padding: 0 24px ;
+  background-color: #fcfcfc;
+  border-radius: 12px;
+}
+
+.main-img {
+  width: 579px;
+  height: 444px;
+}
+
+.blue-text {
+  font-size: 18px;
+  color: #3692ff;
+  font-weight: 700;
+}
+
+.main-text {
+  font-weight: 700;
+  font-size: 40px;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.content-text {
+  font-size: 24px;
+  color: #374151;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.right {
+  text-align: right;
+}
+
+.home-bottom-img {
+  width: 746px;
+  height: 397px;
+}
+
+footer {
+  background-color: #111827;
+  width: 100%;
+  height: 160px;
+}
+
+.footer-grid {
+  display: grid ;
+  grid-template-columns: minmax(200px, 400px) 153px 3fr 128px minmax(200px, 400px);
+  grid-template-rows: 32px 1fr;
+  grid-template-areas: 
+    ". . . . ."
+    ". code FAQ sns ."
+  ;
+  align-items: center; 
+}
+
+.footer-codeit {
+  grid-area: code;
+  font-size: 16px;
+  color: #9ca3af;
+}
+
+.sup {
+  grid-area: FAQ;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 16px;
+  color: #e5e7eb;
+  font-weight: 400;
+}
+
+.privacy a, .FAQ a {
+  color: inherit;            
+  text-decoration: none;
+  cursor: pointer;       
+}
+
+
+.footer-sns {
+  grid-area: sns;
+  display: flex;
+  gap: 12px;
+}
+
+.facebook {
+  cursor: pointer;  
+  width: 20px;
+  height: 20px;
+}
+
+.footer-sns-icon {
+  cursor: pointer;  
+  width: 20px;
+  height: 20px;
+}
