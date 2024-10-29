@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+/* temporary page ui */
+.temp-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  height: 100vh;
+}
+
+.temp-wrapper .page-content {
+  text-align: center;
+}
+
+.temp-wrapper .page-title {
+  margin-bottom: 0.3em;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--color-seondary-700);
+}
+
+.temp-wrapper .page-description {
+  color: var(--color-seondary-400);
+}
+
+/* common - button */
+[class^="btn-"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-primary-100);
+  color: var(--color-white);
+}
+
+[class^="btn-"]:hover {
+  background: var(--color-primary-200);
+}
+
+[class^="btn-"]:active {
+  background: var(--color-primary-300);
+}
+
+[class^="btn-"]:disabled {
+  background: var(--color-seondary-400);
+}
+
+.btn-lg {
+  width: 35.7rem;
+  height: 5.6rem;
+  border-radius: 9999px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.btn-md {
+  width: 24rem;
+  height: 4.8rem;
+  border-radius: 9999px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+[class^="btn-sm"] {
+  width: 8.8rem;
+  height: 4.2rem;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.btn-sm-48 {
+  height: 4.8rem;
+}
+
+/* page */
+.banner {
+  position: relative;
+  height: 54rem;
+  padding: 0 calc(20rem - var(--gutter));
+  background: #cfe5ff;
+}
+
+.banner .inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.banner .banner-content {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10rem;
+}
+
+.banner .banner-title {
+  margin-bottom: 3.2rem;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.08rem;
+  color: var(--color-seondary-700);
+}
+
+.banner .banner-img {
+  position: absolute;
+  right: 2.4rem;
+  bottom: 0;
+  width: min(55vw, 74.6rem);
+}
+
+.feature {
+  padding: 13.8rem 0;
+  background: #fff;
+}
+
+.feature .inner {
+  max-width: calc(98.8rem + var(--gutter) * 2);
+}
+
+.feature-card {
+  overflow: hidden;
+  display: flex;
+  gap: 6.4rem;
+  height: 44.4rem;
+  border-radius: 12px;
+  background: #fcfcfc;
+}
+
+.feature-card .feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-card .feature-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 34.5rem;
+  padding-right: 4rem;
+  word-break: keep-all;
+}
+
+.feature-card .feature-keyword {
+  margin-bottom: 1.2rem;
+  color: var(--color-primary-100);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.feature-card .feature-title {
+  margin-bottom: 2.4rem;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-seondary-700);
+}
+
+.feature-card .feature-description {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--color-seondary-700);
+}
+
+.reverse .feature-card {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.reverse .feature-content {
+  padding-left: 4rem;
+  padding-right: 0;
+}
+
+.footer-banner {
+  margin-top: 13.8rem;
+}
+
+.footer-banner .banner-content {
+  margin-bottom: 17.2rem;
+}
+
+.footer-banner .banner-title {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .banner .inner {
+    justify-content: flex-start;
+    padding-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .feature {
+    padding: 4rem 0 8rem;
+  }
+  .banner {
+    height: auto;
+    padding: 0;
+  }
+
+  .banner .inner {
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner .banner-title {
+    font-size: 3.4rem;
+    letter-spacing: -0.06rem;
+  }
+
+  .banner .banner-img {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    margin: 0;
+  }
+
+  .feature-card {
+    display: block;
+    height: auto;
+    border-radius: 0;
+    background: none;
+  }
+
+  .feature-card .feature-image {
+    overflow: hidden;
+    margin-bottom: 4rem;
+    border-radius: 12px;
+  }
+
+  .feature-card .feature-image img {
+    height: auto;
+    object-fit: unset;
+  }
+
+  .feature-card .feature-title {
+    margin-bottom: 1.8rem;
+    font-size: 3rem;
+  }
+
+  .feature-card .feature-description {
+    font-size: 2rem;
+  }
+
+  .footer-banner {
+    margin-top: 0;
+  }
+}
