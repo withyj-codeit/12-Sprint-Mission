@@ -1,0 +1,58 @@
+/* 가로 해상도가 110px 보다 작은 화면에 적용 */
+@media (max-width: 1520px) {
+   header, .wrap {
+    padding: 0 50px;
+   }
+   .wrap {
+    justify-content: center;
+    text-align: center;
+    }
+    .top-banner, .bottom-banner{
+        height: 700px;
+    }
+    .top-banner .wrap {
+        justify-content: center;
+        align-items: baseline;
+        padding-top: 80px;
+        background-position: center bottom;
+        text-align: center;
+    }
+    .content {
+        gap: 25px;
+    }
+    .content:nth-child(2) {
+        margin: 0;
+    }
+    .content img {
+        width: 55%;;
+    }
+    .bottom-banner .wrap {
+        justify-content: center;
+        align-items: baseline;
+        padding-top: 90px;
+        background-position: center bottom;
+        text-align: center;
+    }
+    footer .wrap {
+        margin: 0;
+        padding: 0 50px;
+    }
+}
+
+/* 가로 해상도가 910px 보다 작은 화면에 적용 */
+@media (max-width: 910px) {
+    .content {
+        flex-direction: column-reverse;
+        margin: 90px 0;
+    }
+    .content img {
+        width: 100%;;
+    }
+    .content:nth-child(2) {
+        flex-direction: column;
+        margin: 0;
+    }
+    .content-txt.right {
+        text-align: center;
+    }
+}
