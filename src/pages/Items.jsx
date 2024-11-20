@@ -1,7 +1,7 @@
 import './Items.css';
 import { useEffect, useState } from 'react';
-import { Card } from '../components/Card';
 import { Pagination } from '../components/Pagination';
+import { CardList } from '../components/CardList'
 
 export const Items = () => {
   const [ data, setData ] = useState([]);
@@ -34,15 +34,7 @@ export const Items = () => {
   return (
     <div className='container'>
       <h1>6주차 - 2</h1>
-      <div className='cardList'>
-        {data.list?.map(({ id, images, ...rest }) => (
-          <Card
-            key={id}
-            imageSrc={images[0] || 'https://i.imgur.com/Kg8Q8Oe.jpeg'}
-            {...rest}
-          />
-        )) ?? '로딩중...'}
-      </div>
+      <CardList list={data.list} />
       <Pagination
         currentPage={currentPage}
         startPage={startPage}
