@@ -1,30 +1,31 @@
 import './Items.css';
 import { useEffect, useState } from 'react';
-import { Pagination } from '../components/Pagination';
+import { Pagination, usePagination } from '../components/Pagination';
 import { CardList } from '../components/CardList'
+
+const PAGE_SIZE = 10;
+const PAGE_COUNT = 5;
 
 export const Items = () => {
   const [ data, setData ] = useState([]);
-  const [ currentPage, setCurrentPage ] = useState(1);
-  const [ startPage, setStartPage ] = useState(1);
-  const pageCount = 5
-  const pageSize = 10
-  const totalPageCount = data.totalCount ? Math.ceil(data.totalCount / pageSize) : 0;
-  const onPrevClick = () => {
-    setStartPage(startPage - pageCount)
-    setCurrentPage(startPage - pageCount)
-  }
-  const onNextClick = () => {
-    setStartPage(startPage + pageCount)
-    setCurrentPage(startPage + pageCount)
-  }
-  const onPageClick = (e) => {
-    setCurrentPage(Number(e.target.dataset.page))
-  }
+  const pageSize = 10;
+  const pageCount = 5;
+  const { 
+    currentPage,
+    startPage,
+    totalPageCount,
+    onPrevClick,
+    onNextClick,
+    onPageClick
+   } = usePagination({
+    totalCount: data.totalCount,
+    pageSize: PAGE_SIZE,
+    pageCount: PAGE_COUNT,
+  })
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(`https://panda-market-api.vercel.app/products?page=${currentPage}&pageSize=10&orderBy=recent`);
+      const response = await fetch(`https://panda-market-api.vercel.app/products?page=${currentPage}&pageSize=${pageSize}&orderBy=recent`);
       const data = await response.json();
       setData(data);
     }
