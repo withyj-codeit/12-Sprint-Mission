@@ -1,0 +1,18 @@
+.paginationContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.paginationContainer button {
+  width: 60px;
+  height: 60px;
+  padding: 5px 5px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.selected {
+  background-color: green;
+}
