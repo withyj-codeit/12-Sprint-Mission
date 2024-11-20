@@ -1,12 +1,26 @@
 import './Items.css';
 import { useEffect, useState } from 'react';
 import { Card } from '../components/Card';
+import { Pagination } from '../components/Pagination';
 
 export const Items = () => {
   const [ data, setData ] = useState([]);
   const [ currentPage, setCurrentPage ] = useState(1);
   const [ startPage, setStartPage ] = useState(1);
-  const totalPage = data.totalCount ? Math.ceil(data.totalCount / 10) : 0;
+  const pageCount = 5
+  const pageSize = 10
+  const totalPageCount = data.totalCount ? Math.ceil(data.totalCount / pageSize) : 0;
+  const onPrevClick = () => {
+    setStartPage(startPage - pageCount)
+    setCurrentPage(startPage - pageCount)
+  }
+  const onNextClick = () => {
+    setStartPage(startPage + pageCount)
+    setCurrentPage(startPage + pageCount)
+  }
+  const onPageClick = (e) => {
+    setCurrentPage(Number(e.target.dataset.page))
+  }
 
   useEffect(() => {
     const fetchData = async () => {
@@ -29,38 +43,15 @@ export const Items = () => {
           />
         )) ?? '로딩중...'}
       </div>
-      <div className='paginationContainer'>
-        <button
-          onClick={() => {
-            setStartPage(startPage - 5)
-            setCurrentPage(startPage - 5)
-          }}
-          disabled={startPage === 1}
-        >
-          이전
-        </button>
-        {totalPage && (
-          [...Array(5)].map((_, i) => (
-            startPage + i <= totalPage && (
-              <button 
-                className={currentPage === startPage + i ? 'selected' : ''}
-                onClick={() => setCurrentPage(startPage + i)}
-              >
-                {startPage + i}
-              </button>
-            )
-          ))
-        )}
-        <button
-          onClick={() => {
-            setStartPage(startPage + 5)
-            setCurrentPage(startPage + 5)
-          }}
-          disabled={startPage + 5 -1 >= totalPage}
-        >
-          다음
-        </button>
-      </div>
+      <Pagination
+        currentPage={currentPage}
+        startPage={startPage}
+        pageCount={pageCount}
+        totalPageCount={totalPageCount}
+        onPrevClick={onPrevClick}
+        onNextClick={onNextClick}
+        onPageClick={onPageClick}
+      />
     </div>
   )
 }
