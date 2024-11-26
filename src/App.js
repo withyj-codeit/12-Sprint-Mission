@@ -1,9 +1,11 @@
+import { TodoContainer } from "./containers/TodoContainer"
 import TodoPage from "./pages/TodoPage"
 
 
 function App() {
   return (
-    <TodoPage />
+    <TodoContainer />
+    // <TodoPage />
   )
 }
 
