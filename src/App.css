@@ -5,3 +5,8 @@
   align-items: center;
   padding-top: 200px;
 }
+
+.content {
+  display: flex;
+  gap: 32px;
+}
