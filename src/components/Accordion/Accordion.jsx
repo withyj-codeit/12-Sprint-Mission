@@ -1,14 +1,29 @@
 import './Accordion.css';
 import React, { createContext, useContext, useMemo, useRef, useState, Children, cloneElement } from 'react';
 
-const AccordionContext = createContext(null);
+const AccordionContextValue = createContext(null);
+const AccordionContextAction = createContext(null);
+
+const useAccordionValue = () => {
+  const context = useContext(AccordionContextValue);
+  if (!context) {
+    throw new Error('Accordion components must be used within an Accordion.');
+  }
+  return context;
+};
+const useAccordionAction = () => {
+  const context = useContext(AccordionContextAction);
+  if (!context) {
+    throw new Error('Accordion components must be used within an Accordion.');
+  }
+  return context;
+};
 
 export const Accordion = ({ children }) => {
   const [activeItems, setActiveItems] = useState([]);
   const accordionItems = children.filter((child) => child.type.name === 'Item');
 
-  const value = useMemo(() => ({
-    activeItems,
+  const actions = useMemo(() => ({
     toggleItem: (id) => {
       setActiveItems((prev) => prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]);
     },
@@ -18,21 +33,15 @@ export const Accordion = ({ children }) => {
     closeAll: () => {
       setActiveItems([]);
     },
-  }), [activeItems, accordionItems]);
+  }), []);
 
   return (
-    <AccordionContext.Provider value={value}>
-      <div className="accordion">{children}</div>
-    </AccordionContext.Provider>
+    <AccordionContextAction.Provider value={actions}>
+      <AccordionContextValue.Provider value={{ activeItems }}>
+        <div className="accordion">{children}</div>
+      </AccordionContextValue.Provider>
+    </AccordionContextAction.Provider>
   );
-};
-
-const useAccordion = () => {
-  const context = useContext(AccordionContext);
-  if (!context) {
-    throw new Error('Accordion components must be used within an Accordion.');
-  }
-  return context;
 };
 
 const Item = ({ id, children }) => {
@@ -44,7 +53,8 @@ const Item = ({ id, children }) => {
 };
 
 const Header = ({ id, children }) => {
-  const { activeItems, toggleItem } = useAccordion();
+  const { activeItems } = useAccordionValue();
+  const { toggleItem } = useAccordionAction();
   const isActive = activeItems.includes(id);
 
   return (
@@ -59,7 +69,7 @@ const Header = ({ id, children }) => {
 
 const Body = ({ id, children }) => {
   const ref = useRef(null);
-  const { activeItems } = useAccordion();
+  const { activeItems } = useAccordionValue();
   const isActive = activeItems.includes(id);
 
   return (
@@ -76,7 +86,7 @@ const Body = ({ id, children }) => {
 };
 
 const OpenAllButton = () => {
-  const { openAll } = useAccordion();
+  const { openAll } = useAccordionAction();
 
   return (
     <button
@@ -88,7 +98,7 @@ const OpenAllButton = () => {
 };
 
 const CloseAllButton = () => {
-  const { closeAll } = useAccordion();
+  const { closeAll } = useAccordionAction();
 
   return (
     <button
