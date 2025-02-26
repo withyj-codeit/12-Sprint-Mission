@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 80px 48px;
+  border: 1px solid var(--gray300);
+  border-radius: 16px;
+}
+
+.form {
+  margin-top: 64px;
+  margin-bottom: 40px;
+}
