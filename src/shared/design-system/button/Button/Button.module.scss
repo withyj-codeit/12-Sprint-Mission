@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  
+  &.primary {
+    background-color: var(--primary);
+    color: white;
+  }
+
+  &:disabled {
+    background-color: var(--gray300);
+    color: var(--gray500);
+    cursor: not-allowed;
+  }
+}
