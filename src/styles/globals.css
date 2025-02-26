@@ -1,6 +1,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --primary: #0070f3;
+
+  --gray300: #CFDBEA;
+  --gray500: #9FACBD;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,4 +44,13 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+input {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
 }
