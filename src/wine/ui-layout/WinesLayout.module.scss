@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-template:
+    "recommended-wines recommended-wines" auto
+    ". search-bar" auto
+    "search-filter wine-list" auto
+    "wine-registration wine-list" 1fr
+    / 284px 1fr;
+  column-gap: 60px;
+  row-gap: 40px;
+  width: 100%;
+  max-width: 1140px;
+}
+
+.recommended-wines {
+  grid-area: recommended-wines;
+}
+
+.search-bar {
+  grid-area: search-bar;
+}
+
+.search-filter {
+  grid-area: search-filter;
+}
+
+.wine-registration {
+  grid-area: wine-registration;
+}
+
+.wine-list {
+  grid-area: wine-list;
+}
