@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--gray500);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.wines {
+  display: flex;
+  gap: 16px;
+}
