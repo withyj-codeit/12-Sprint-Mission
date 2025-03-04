@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  height: 42px;
+  padding: 0 16px;
+  border-radius: 100px;
+
+  &.white {
+    background-color: var(--background);
+    border: 1px solid var(--gray300);
+  }
+
+  &.primary {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+}
