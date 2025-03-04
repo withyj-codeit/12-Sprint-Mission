@@ -7,7 +7,7 @@ const cx = classNames.bind(styles)
 type WinesLayoutProps = {
   recommendedWines: ReactElement
   searchBar: ReactElement
-  searchFilter: ReactElement
+  wineFilter: ReactElement
   wineRegistration: ReactElement
   wineList: ReactElement
 }
@@ -15,7 +15,7 @@ type WinesLayoutProps = {
 export const WinesLayout = ({
   recommendedWines,
   searchBar,
-  searchFilter,
+  wineFilter,
   wineRegistration,
   wineList,
 }: WinesLayoutProps) => {
@@ -28,7 +28,7 @@ export const WinesLayout = ({
         {searchBar}
       </div>
       <div className={cx('search-filter')}>
-        {searchFilter}
+        {wineFilter}
       </div>
       <div className={cx('wine-registration')}>
         {wineRegistration}
